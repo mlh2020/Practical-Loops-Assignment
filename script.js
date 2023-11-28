@@ -10,3 +10,22 @@ for (i = 1; i < 101; i++){
         console.log(i);
     }
 }
+
+//Part 2: Prime Time
+
+let n = 9;
+while (true) {
+    let isPrime = true;
+    for (i = 2; i < n; i++){
+        if (n % i === 0) {
+            isPrime = false;
+            break;
+        }
+        
+    } 
+    if (isPrime) {
+        console.log(n);
+        break;
+    }
+    n++;
+}
